@@ -1,0 +1,1 @@
+wget http://geneontology.org/ontology/go-basic.obo

@@ -1,0 +1,30 @@
+{
+  "index_patterns": "gene_*",
+  "template": {
+    "settings": {
+      "index": {
+        "number_of_shards": 1
+      }
+    },
+    "mappings": {
+      "properties": {
+        "organism": {
+          "type": "keywords"
+        },
+        "gene_id": {
+          "type": "text"
+        },
+        "gene_names": {
+          "type": "keywords"
+        },
+        "go_term": {
+          "properties": {
+            "id": "text",
+            "description": "text"
+          }
+        }
+      }
+    },
+    "priority": 100
+  }
+}
