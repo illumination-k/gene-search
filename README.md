@@ -13,7 +13,7 @@ curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/_template/
 `scripts`配下にある`${organism}.py`を使用すると`data`配下に`${organism}_index.json`ができる
 
 ```bash
-organism=marchantia
+organism=mpolymorpha
 curl -s -H "Content-Type: application/x-ndjson" -XPOST localhost:9200/_bulk --data-binary @data/${organism}_index.json
 ```
 
